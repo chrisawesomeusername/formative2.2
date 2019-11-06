@@ -7,52 +7,51 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
-    <title></title>
+    <title>bands</title>
   </head>
-  <body>
+  <body class="bg-dark">
     <div class="bg-dark p-0">
       <img class="head-img" src="images/head.jpg" alt="">
     </div>
     <!-- start of button section -->
-    <div class="bg-dark dropdown-section">
-
-      <div class="dropdown drop-year">
-        <button class="btn bg-dark text-light btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort By Year</button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a id="yearAsc" class="dropdown-item" href="#">Ascending</a>
-          <a id="yearDesc" class="dropdown-item" href="#">Descending</a>
+    <div class="master-container container">
+      <div class="bg-dark dropdown-section">
+        <div class="dropdown drop-year">
+          <button class="btn bg-dark text-light btn-sm dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort By Year</button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <a id="yearAsc" class="dropdown-item" href="#">Ascending</a>
+            <a id="yearDesc" class="dropdown-item" href="#">Descending</a>
+          </div>
         </div>
+
+        <div class="dropdown">
+          <button class="btn bg-dark text-light btn-sm dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort By Country</button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+            <a class="dropdown-item" href="#">Ascending</a>
+            <a class="dropdown-item" href="#">Descending</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="btn bg-dark text-light btn-sm dropdown-toggle" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort By Subgenre</button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+            <a class="dropdown-item" href="#">Ascending</a>
+            <a class="dropdown-item" href="#">Descending</a>
+          </div>
+        </div>
+
+      </div>
+      <!-- end of button section  -->
+
+
+      <div id="headingText" class="bg-dark text-light">
+        <!-- dynamic text in here displaing what button has been selected-->
       </div>
 
-      <div class="dropdown">
-        <button class="btn bg-dark text-light btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort By Country</button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Ascending</a>
-          <a class="dropdown-item" href="#">Descending</a>
-        </div>
+      <div class="main-section row" id="mainContent">
+        <!-- javascript goes here -->
       </div>
-
-      <div class="dropdown">
-        <button class="btn bg-dark text-light btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort By Subgenre</button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Ascending</a>
-          <a class="dropdown-item" href="#">Descending</a>
-        </div>
-      </div>
-
     </div>
-    <!-- end of button section  -->
-
-
-    <div id="headingText" class="bg-dark text-light">
-      <!-- dynamic text in here displaing what button has been selected-->
-    </div>
-
-    <div id="mainContent">
-      <!-- javascript goes here -->
-    </div>
-
-
 
 
 
@@ -69,6 +68,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <script src="js/script.js" charset="utf-8"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
