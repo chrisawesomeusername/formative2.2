@@ -7,6 +7,7 @@ var bands = [
     name:'behemoth',
     year:'',
     country:'',
+    about:'',
     genre:''
   },
   {
@@ -14,6 +15,7 @@ var bands = [
     name:'beastwars',
     year:'',
     country:'',
+    about:'',
     genre:''
   },
   {
@@ -21,6 +23,7 @@ var bands = [
     name:'behemoth',
     year:'',
     country:'',
+    about:'',
     genre:''
   },
   {
@@ -28,6 +31,7 @@ var bands = [
     name:'behemoth',
     year:'',
     country:'',
+    about:'',
     genre:''
   },
   {
@@ -35,13 +39,15 @@ var bands = [
     name:'behemoth',
     year:'',
     country:'',
+    about:'',
     genre:''
   },
   {
     photo:'images/jorm1.jpg',
-    name:'behemoth',
+    name:'jormungandr',
     year:'',
     country:'',
+    about:'',
     genre:''
   },
 
@@ -72,11 +78,12 @@ function theBands(){
 for (var i = 0; i < bands.length; i++) {
   document.getElementById('mainContent').innerHTML
 
-  +='<div class="card border-0 rounded-0 bg-dark text-light col-3 p-2" style="width: 18rem;">'
+  +='<div class="card border-0 rounded-0 bg-dark text-light col-12 col-md-6 col-lg-3 p-2" style="width: 18rem;">'
   +'<img src="'+bands[i].photo+'" class="card-img-top p-0" alt="...">'
   +'<div class="card-body">'
-  +'<h5 class="card-title">'+bands[i].name.toUpperCase()+'</h5>'
-  +'<p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>'
+  +'<h5 class="card-title">'+bands[i].name.toUpperCase().slice(0).charAt(0)bands[i].name.replace()+'</h5>'
+  //working on this to capitalise words
+  +'<p class="card-text">'+bands[i].about+'</p>'
   +'</div>'
   +'</div>';
 }};

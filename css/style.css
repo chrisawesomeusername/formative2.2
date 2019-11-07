@@ -20,15 +20,15 @@
 }
 
 .btn{
-  height: 28px;
-  font-size: 10px;
+  font-size: 12px;
   border: none;
   border-radius: 0;
 }
 
-/* .card-img-top{
-  width: 100%;
-} */
+.card-img-top{
+  width: 70%;
+  margin: auto;
+}
 
 
 
@@ -36,5 +36,14 @@
   .head-img{
     height: 300px;
     object-position: 30% 40%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .card-img-top{
+    width: 100%;
+    margin: auto;
+  }
+  .btn{
+    font-size: 20px;
   }
 }
