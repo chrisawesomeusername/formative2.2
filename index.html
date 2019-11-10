@@ -9,7 +9,7 @@
 
     <title>bands</title>
   </head>
-  <body class="bg-dark">
+  <body onload="bandsAlph()" class="bg-dark">
     <div class="bg-dark p-0">
       <img class="head-img" src="images/head.jpg" alt="">
     </div>
@@ -26,9 +26,7 @@
 
         <div class="dropdown">
           <button class="btn bg-dark text-light btn-sm dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort By Country</button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-            <a class="dropdown-item" href="#">Ascending</a>
-            <a class="dropdown-item" href="#">Descending</a>
+          <div id="countryList" class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
           </div>
         </div>
 

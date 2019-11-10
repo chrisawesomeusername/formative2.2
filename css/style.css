@@ -6,14 +6,19 @@
   box-sizing: border-box;
 }
 
+body{
+  /* background: #333; */
+}
+
 .head-img{
-  width: 100%;
+  width: 100vw;
   height: 100px;
   object-fit: cover;
 }
 .dropdown-section{
   display: flex;
   justify-content: space-around;
+  margin: 15px 0px;
 }
 .dropdown{
   display: inline-block;
@@ -29,13 +34,18 @@
   width: 70%;
   margin: auto;
 }
-
+.card-title, .card-text{
+  text-transform: capitalize;
+}
 
 
 @media only screen and (min-width: 600px) {
   .head-img{
     height: 300px;
     object-position: 30% 40%;
+  }
+  .btn{
+    font-size: 20px;
   }
 }
 @media only screen and (min-width: 769px) {
