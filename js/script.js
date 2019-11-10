@@ -213,7 +213,7 @@ function theBands(){
 for (var i = 0; i < bands.length; i++) {
   document.getElementById('mainContent').innerHTML
 
-  +='<div class="card border-2 mb-4 bg-dark text-light col-12 col-md-6 col-lg-3 p-2" style="width: 18rem;">'
+  +='<div class="card border-0 mb-4 text-light col-12 col-md-6 col-lg-3 p-4" style="width: 18rem;">'
   +'<img src="'+bands[i].photo1+'" class="card-img-top" alt="...">'
   +'<div class="card-body pb-0">'
   +'<h5 class="card-title text-center">'+bands[i].name+'</h5>'
