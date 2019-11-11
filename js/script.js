@@ -3,6 +3,7 @@ console.log('do the thing');
 
 var bands = [
   {
+    id: 'b1',
     photo1:'images/behe1.jpg',
     photo2:'images/behe2.jpg',
     photo3:'images/behe3.jpg',
@@ -17,6 +18,7 @@ var bands = [
     genre:'death metal'
   },
   {
+    id: 'b2',
     photo1:'images/beast1.jpg',
     photo2:'images/beast2.jpg',
     photo3:'images/beast3.jpg',
@@ -28,6 +30,7 @@ var bands = [
     genre:'sludge metal'
   },
   {
+    id: 'b3',
     photo1:'images/gojir1.jpg',
     photo2:'images/gojir2.jpg',
     photo3:'images/gojir3.jpg',
@@ -41,6 +44,7 @@ var bands = [
     genre:'progressive death metal'
   },
   {
+    id: 'b4',
     photo1:'images/slay1.jpg',
     photo2:'images/slay2.jpg',
     photo3:'images/slay3.jpg',
@@ -59,6 +63,7 @@ var bands = [
     genre:'thrash metal'
   },
   {
+    id: 'b5',
     photo1:'images/meat1.jpg',
     name:'meat',
     year:2008,
@@ -67,6 +72,7 @@ var bands = [
     genre:'progressive thrash metal'
   },
   {
+    id: 'b6',
     photo1:'images/jorm1.jpg',
     photo2:'images/jorm2.jpg',
     name:'jormungandr',
@@ -76,6 +82,7 @@ var bands = [
     genre:'viking metal'
   },
   {
+    id: 'b7',
     photo1:'images/sepul1.jpg',
     photo2:'images/sepul2.jpg',
     photo3:'images/sepul3.jpg',
@@ -87,6 +94,7 @@ var bands = [
     genre:'thrash metal'
   },
   {
+    id: 'b8',
     photo1:'images/revo1.jpg',
     photo2:'images/revo2.jpg',
     photo3:'images/revo3.jpg',
@@ -101,6 +109,7 @@ var bands = [
     genre:'technical death metal'
   },
   {
+    id: 'b9',
     photo1:'images/king1.jpg',
     photo2:'images/king2.jpg',
     photo3:'images/king3.jpg',
@@ -111,6 +120,7 @@ var bands = [
     genre:'thrashcore'
   },
   {
+    id: 'b10',
     photo1:'images/met1.jpg',
     photo2:'images/met2.jpg',
     photo3:'images/met3.jpg',
@@ -128,6 +138,7 @@ var bands = [
     genre:'thrash metal'
   },
   {
+    id: 'b11',
     photo1:'images/baron1.jpg',
     photo2:'images/baron2.jpg',
     photo3:'images/baron3.jpg',
@@ -140,6 +151,7 @@ var bands = [
     genre:'sludge metal'
   },
   {
+    id: 'b12',
     photo1:'images/high1.jpg',
     photo2:'images/high2.jpg',
     photo3:'images/high3.jpg',
@@ -152,6 +164,7 @@ var bands = [
     genre:'sludge metal'
   },
   {
+    id: 'b13',
     photo1:'images/sky1.jpg',
     photo2:'images/sky2.jpg',
     photo3:'images/sky3.jpg',
@@ -162,6 +175,7 @@ var bands = [
     genre:'progressive metal'
   },
   {
+    id: 'b14',
     photo1:'images/pan1.jpg',
     photo2:'images/pan2.jpg',
     photo3:'images/pan3.jpg',
@@ -174,6 +188,7 @@ var bands = [
     genre:'grove metal'
   },
   {
+    id: 'b15',
     photo1:'images/lamb1.jpg',
     photo2:'images/lamb2.jpg',
     photo3:'images/lamb3.jpg',
@@ -188,6 +203,7 @@ var bands = [
     genre:'groove metal'
   },
   {
+    id: 'b16',
     photo1:'images/between1.jpg',
     photo2:'images/between2.jpg',
     photo3:'images/between3.jpg',
@@ -207,31 +223,77 @@ var bands = [
 console.log(bands.length);
 
 
-
-
+var newId = 1;
 function theBands(){
-for (var i = 0; i < bands.length; i++) {
-  document.getElementById('mainContent').innerHTML
-
-  +='<div class="card border-0 mb-4 text-light col-12 col-md-6 col-lg-3 p-4" style="width: 18rem;">'
-  +'<img src="'+bands[i].photo1+'" class="card-img-top" alt="...">'
-  +'<div class="card-body pb-0">'
-  +'<h5 class="card-title text-center">'+bands[i].name+'</h5>'
-  +'<p class="card-text">'+'country - '+bands[i].country+'</p>'
-  +'<p class="card-text">'+'year formed - '+bands[i].year+'</p>'
-  +'<p class="card-text">'+'genre - '+bands[i].genre+'</p>'
-  +'<p class="card-text">'+'location - '+bands[i].country+'</p>'
-  //working on this to capitalise words
-  // .toUpperCase().slice(0).charAt(0)bands[i].name.replace()
-  //put it in a new var???
-  // +'<p class="card-text">'+bands[i].about+'</p>'
-  +'</div>'
-  +'</div>';
-}};
+  for (var i = 0; i < bands.length; i++) {
+    document.getElementById('headingText').innerHTML = ' '
+    +'<p>all</p>';
+    document.getElementById('mainContent').innerHTML
+    +='<div class="card border-0 mb-4 text-light col-12 col-md-6 col-lg-3 p-4" style="width: 18rem;">'
+    +'<img class="band-img card-img-top" id="b'+newId.toString()+'" src="'+bands[i].photo1+'"alt="...">'
+    +'<div class="card-body pb-0">'
+    +'<h5 class="card-title text-center">'+bands[i].name+'</h5>'
+    +'<p class="card-text">'+'country - '+bands[i].country+'</p>'
+    +'<p class="card-text">'+'year formed - '+bands[i].year+'</p>'
+    +'<p class="card-text">'+'genre - '+bands[i].genre+'</p>'
+    +'<p class="card-text">'+'location - '+bands[i].country+'</p>'
+    +'</div>';
+    newId++;
+  }
+}
 
 // theBands();
 //------------------------------------------------- end of base info ----------------------------------------------------------
 
+
+
+
+//------------------------------------------------- modals------------------------------------------------------------------
+$('.my-modal').hide();
+
+function test(){
+$('.band-img').on('click', function(){
+  $('.my-modal').show();
+  for (var i = 0; i < bands.length; i++) {
+    if (bands[i].id === this.newId){
+      document.getElementById('modalContent').innerHTML
+      = '<div class="text-center display-3">' + bands[i].name + '</div></br>'
+      + '<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">'
+      +  '<ol class="carousel-indicators">'
+      +    '<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>'
+      +    '<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>'
+      +    '<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>'
+      +  '</ol>'
+      // +  '<div class="carousel-inner">'
+      // +    '<div class="carousel-item active">'
+      // +      '<img class="dog-img-modal p-4 container" src="' + bands[i].photo1 + '"alt="..."/>'
+      // +    '</div>'
+      // +    '<div class="carousel-item">'
+      // +      '<img class="dog-img-modal p-4 container" src="' + bands[i].photo2 + '"alt="..."/>'
+      // +    '</div>'
+      // +    '<div class="carousel-item">'
+      // +      '<img class="dog-img-modal p-4 container" src="' + bands[i].photo3 + '"alt="..."/>'
+      // +    '</div>'
+      // +  '</div>'
+      +  '<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">'
+      +    '<span class="carousel-control-prev-icon" aria-hidden="true"></span>'
+      +    '<span class="sr-only">Previous</span>'
+      +  '</a>'
+      +  '<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">'
+      +    '<span class="carousel-control-next-icon" aria-hidden="true"></span>'
+      +    '<span class="sr-only">Next</span>'
+      +  '</a>'
+      + '</div>';
+    };
+    console.log(bands[i].name);
+  };
+});
+}
+
+
+$('.close-bar').on('click', function(){
+  $('.my-modal').hide();
+});
 
 
 
@@ -241,7 +303,7 @@ for (var i = 0; i < bands.length; i++) {
 //------------------------------------------------- default alphabetical loading-----------------------------------------------
 
 function bandsAlph(){
-  document.getElementById('mainContent').innerHTML = ' '
+  document.getElementById('mainContent').innerHTML = ' ';
   bands.sort(compare);//calling a function called compare to define the object property
   function compare(a,b){
     if (a.name > b.name){
@@ -251,13 +313,16 @@ function bandsAlph(){
     }
   }
   theBands();
-};
+  test();
+}
 //------------------------------------------------- default alphabetical loading-----------------------------------------------
 
 //------------------------------------------------- year sort------------------------------------------------------------------
 
 document.getElementById('yearAsc').addEventListener('click', function(){
-  document.getElementById('mainContent').innerHTML = ' '
+
+  //tyring to get heading text to display from list selection
+  document.getElementById('mainContent').innerHTML = ' ';
   bands.sort(compare);//calling a function called compare to define the object property
   function compare(a,b){
     if (a.year > b.year){
@@ -267,9 +332,11 @@ document.getElementById('yearAsc').addEventListener('click', function(){
     }
   }
   theBands();
+  document.getElementById('headingText').innerHTML = ' '
+  +'<p>years ascending</p>';
 });
 document.getElementById('yearDesc').addEventListener('click', function(){
-  document.getElementById('mainContent').innerHTML = ' '
+  document.getElementById('mainContent').innerHTML = ' ';
   bands.sort(compare);//calling a function called compare to define the object property
   function compare(a,b){
     if (a.year < b.year){
@@ -279,6 +346,8 @@ document.getElementById('yearDesc').addEventListener('click', function(){
     }
   }
   theBands();
+  document.getElementById('headingText').innerHTML = ' '
+  +'<p>years decending</p>';
 });
 
 //------------------------------------------------- year sort------------------------------------------------------------------

@@ -39,10 +39,24 @@ body{
   width: 70%;
   margin: auto;
 }
-.card-title, .card-text{
+.card-title, .card-text, #headingText{
   text-transform: capitalize;
 }
 
+.my-modal{
+  background-color: white;
+  height: 200px;
+  width: 30vw;
+  display: none;
+  position: fixed;
+  top: 120px;
+  left: 35%;
+  z-index: 4;
+}
+
+.band-img, .close-bar:hover{
+  cursor: pointer;
+}
 
 @media only screen and (min-width: 600px) {
   .head-img{
