@@ -351,3 +351,41 @@ document.getElementById('yearDesc').addEventListener('click', function(){
 });
 
 //------------------------------------------------- year sort------------------------------------------------------------------
+//------------------------------------------------- country sort------------------------------------------------------------------
+
+
+var filler = [];
+var countries = [];
+var selectedCountry = [];
+var check = [];
+var joinCountries = [];
+function allCountries(){
+  document.getElementById('countryList').innerHTML = ' '
+  filler = []
+  countries = [];
+  selectedCountry = [];
+  check = [];
+  joinCountries = [];
+
+  for (var i = 0; i < bands.length; i++) {
+    filler.push(bands[i].country)
+    filler[i].
+  };
+  // joinCountries = countries.join();
+  for (var i = 0; i < filler.length; i++) {
+    check = countries.indexOf(filler[i]);
+    if (check < 0) {
+      countries.push(filler[i]);
+    };
+  };
+
+  countries.sort();
+
+
+
+  for (var i = 0; i < countries.length; i++) {
+    document.getElementById('countryList').innerHTML +=
+    '<a onclick="'+countries[i]+'"  class="dropdown-item">'+countries[i]+'</a>'
+  }
+};
+allCountries();
